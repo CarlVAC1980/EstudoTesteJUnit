@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import br.ce.wcaquino.entidades.Usuario;
 
-public class AsserTest {
+public class AssertTest {
 	
 	@Test
 	public void test() {
