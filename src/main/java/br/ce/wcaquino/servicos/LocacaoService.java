@@ -64,5 +64,9 @@ public class LocacaoService {
 		dao.salvar(locacao);
 		
 		return locacao;
-	}	
+	}
+	
+	public void setLocacaoDAO(LocacaoDAO dao) {
+		this.dao = dao;
+	}
 }
