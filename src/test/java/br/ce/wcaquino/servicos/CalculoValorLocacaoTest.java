@@ -68,7 +68,8 @@ public class CalculoValorLocacaoTest {
 		Locacao resultado = service.alugarFilme(usuario, filmes);
 		
 		//verificacao
-		assertThat(resultado.getValor(), is(valorLocacao));
+		assertThat(resultado.getValor(), is(valorLocacao));	
+		
 	}
 
 }

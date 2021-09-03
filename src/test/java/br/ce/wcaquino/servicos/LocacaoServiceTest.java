@@ -27,7 +27,7 @@ import br.ce.wcaquino.exceptions.FilmeSemEstoqueException;
 import br.ce.wcaquino.exceptions.LocadoraException;
 import br.ce.wcaquino.utils.DataUtils;
 
-public class LocacaoSericeTest {
+public class LocacaoServiceTest {
 
 	private LocacaoService service;
 	
@@ -55,9 +55,7 @@ public class LocacaoSericeTest {
 
 		// verificacao
 		error.checkThat(locacao.getValor(), is(equalTo(5.0)));
-//		error.checkThat(isMesmaData(locacao.getDataLocacao(), new Date()), is(true));
 		error.checkThat(locacao.getDataLocacao(), ehHoje());
-//		error.checkThat(isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)), is(true));
 		error.checkThat(locacao.getDataRetorno(), ehHojeComDiferencaDias(1));
 
 	}
